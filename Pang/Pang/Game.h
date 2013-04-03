@@ -14,6 +14,7 @@ public:
 	const static sf::Input& GetInput();
 	const static int SCREEN_WIDTH = 1024;
 	const static int SCREEN_HEIGHT = 768;
+	const static GameObjectManager& GetGameObjectManager();
 
 private:
 	static bool IsExiting();

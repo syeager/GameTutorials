@@ -1,9 +1,38 @@
-﻿Build started 4/1/2013 11:46:43 PM.
-     1>Project "C:\Users\Sam\Documents\GitHub\GameTutorials\Pang\Pang\Pang.vcxproj" on node 2 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\Pang.lastbuildstate".
-     1>Done Building Project "C:\Users\Sam\Documents\GitHub\GameTutorials\Pang\Pang\Pang.vcxproj" (clean target(s)).
+﻿Build started 4/2/2013 11:06:32 PM.
+     1>Project "D:\Users\Batman\Documents\GitHub\GameTutorials\Pang\Pang\Pang.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\Pang.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+         d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"SFML-1.6/Include/" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Pang.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp SFMLSoundProvider.cpp SoundFileCache.cpp
+         SoundFileCache.cpp
+     1>d:\users\batman\documents\github\gametutorials\pang\pang\soundfilecache.h(29): error C2091: function returns function
+     1>d:\users\batman\documents\github\gametutorials\pang\pang\soundfilecache.h(30): error C2065: 'p' : undeclared identifier
+     1>d:\users\batman\documents\github\gametutorials\pang\pang\soundfilecache.h(30): error C2228: left of '.second' must have class/struct/union
+                 type is ''unknown-type''
+     1>d:\users\batman\documents\github\gametutorials\pang\pang\soundfilecache.cpp(16): error C2146: syntax error : missing ';' before identifier 'itr'
+     1>d:\users\batman\documents\github\gametutorials\pang\pang\soundfilecache.cpp(16): error C2065: 'itr' : undeclared identifier
+     1>d:\users\batman\documents\github\gametutorials\pang\pang\soundfilecache.cpp(17): error C2065: 'itr' : undeclared identifier
+     1>d:\users\batman\documents\github\gametutorials\pang\pang\soundfilecache.cpp(35): error C2065: 'itr' : undeclared identifier
+     1>d:\users\batman\documents\github\gametutorials\pang\pang\soundfilecache.cpp(35): error C2227: left of '->second' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+         SFMLSoundProvider.cpp
+     1>d:\users\batman\documents\github\gametutorials\pang\pang\soundfilecache.h(29): error C2091: function returns function
+     1>d:\users\batman\documents\github\gametutorials\pang\pang\soundfilecache.h(30): error C2065: 'p' : undeclared identifier
+     1>d:\users\batman\documents\github\gametutorials\pang\pang\soundfilecache.h(30): error C2228: left of '.second' must have class/struct/union
+                 type is ''unknown-type''
+     1>d:\users\batman\documents\github\gametutorials\pang\pang\sfmlsoundprovider.cpp(7): error C3646: '_currentSongName' : unknown override specifier
+     1>d:\users\batman\documents\github\gametutorials\pang\pang\sfmlsoundprovider.cpp(8): error C2448: 'SFMLSoundProvider::{ctor}' : function-style initializer appears to be a function definition
+         Game.cpp
+     1>d:\users\batman\documents\github\gametutorials\pang\pang\soundfilecache.h(29): error C2091: function returns function
+     1>d:\users\batman\documents\github\gametutorials\pang\pang\soundfilecache.h(30): error C2065: 'p' : undeclared identifier
+     1>d:\users\batman\documents\github\gametutorials\pang\pang\soundfilecache.h(30): error C2228: left of '.second' must have class/struct/union
+                 type is ''unknown-type''
+     1>d:\users\batman\documents\github\gametutorials\pang\pang\game.cpp(16): error C2664: 'ServiceLocator::RegisterServiceLocator' : cannot convert parameter 1 from 'SFMLSoundProvider *' to 'IAudioProvider *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+         Generating Code...
+     1>Done Building Project "D:\Users\Batman\Documents\GitHub\GameTutorials\Pang\Pang\Pang.vcxproj" (build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:00.01
+Time Elapsed 00:00:00.13
