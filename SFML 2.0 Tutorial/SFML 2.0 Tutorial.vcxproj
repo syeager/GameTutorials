@@ -40,16 +40,16 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>d:\SFML\SFML-2.0\include\;$(IncludePath)</IncludePath>
+    <IncludePath>c:\SFML\SFML-2.0\include\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LibraryPath>d:\SFML\SFML-2.0\lib\;$(LibraryPath)</LibraryPath>
+    <LibraryPath>c:\SFML\SFML-2.0\lib\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>d:\SFML\SFML-2.0\include\;$(IncludePath)</IncludePath>
+    <IncludePath>c:\SFML\SFML_2.0\include\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <LibraryPath>d:\SFML\SFML-2.0\lib\;$(LibraryPath)</LibraryPath>
+    <LibraryPath>c:\SFML\SFML_2.0\lib\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
