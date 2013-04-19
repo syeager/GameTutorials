@@ -40,10 +40,10 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>c:\SFML\SFML-2.0\include\;$(IncludePath)</IncludePath>
+    <IncludePath>d:\SFML\SFML-2.0\include\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LibraryPath>c:\SFML\SFML-2.0\lib\;$(LibraryPath)</LibraryPath>
+    <LibraryPath>d:\SFML\SFML-2.0\lib\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>c:\SFML\SFML_2.0\include\;$(IncludePath)</IncludePath>
