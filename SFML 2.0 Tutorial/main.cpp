@@ -1,4 +1,4 @@
-// Video: 24
+// Video: 30
 #include <SFML/Graphics.hpp>
 #include <SFML/Network.hpp>
 #include <SFML/System.hpp>
@@ -8,7 +8,7 @@
 
 using namespace std;
 
-int main()
+int main1()
 {
 	sf::IpAddress ip = sf::IpAddress::getLocalAddress();
 	sf::TcpSocket socket;
