@@ -1,0 +1,18 @@
+#pragma once
+#include "stdafx.h"
+class TitleScreen : public GameScreen
+{
+public:
+	TitleScreen(void);
+	~TitleScreen(void);
+
+	void LoadContent();
+	void UnloadContent();
+	void Update();
+	void Draw(sf::RenderWindow &Window);
+
+private:
+	sf::Text text;
+	sf::Font font;
+};
+
