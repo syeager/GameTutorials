@@ -12,7 +12,7 @@ public:
 
 	void Initialize();
 	void LoadContent();
-	void Update(sf::Event event);
+	void Update(sf::RenderWindow &Window, sf::Event event);
 	void Draw(sf::RenderWindow &Window);
 
 	void AddScreen(GameScreen *screen);

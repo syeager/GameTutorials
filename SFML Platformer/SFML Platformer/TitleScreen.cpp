@@ -26,7 +26,7 @@ void TitleScreen::UnloadContent()
 } // end UnloadContent
 
 
-void TitleScreen::Update(sf::Event event)
+void TitleScreen::Update(sf::RenderWindow &Window, sf::Event event)
 {
 	input.Update(event);
 

@@ -26,7 +26,7 @@ void SplashScreen::UnloadContent()
 } // end UnloadContent
 
 
-void SplashScreen::Update(sf::Event event)
+void SplashScreen::Update(sf::RenderWindow &Window, sf::Event event)
 {
 	input.Update(event);
 

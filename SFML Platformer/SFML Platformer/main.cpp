@@ -1,4 +1,4 @@
-// Video: 7
+// Video: 9
 #include "stdafx.h"
 
 
@@ -6,6 +6,7 @@ int main()
 {
 	// set up
 	sf::RenderWindow Window(sf::VideoMode(ScreenWidth, ScreenHeight, 32), "Platformer");
+	Window.setKeyRepeatEnabled(false);
 
 	ScreenManager::Instance().Initialize();
 	ScreenManager::Instance().LoadContent();
@@ -24,7 +25,7 @@ int main()
 				break;
 			}
 
-			ScreenManager::Instance().Update(Event);
+			ScreenManager::Instance().Update(Window, Event);
 		}
 
 		Window.clear();

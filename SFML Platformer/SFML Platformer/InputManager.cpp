@@ -20,7 +20,7 @@ void InputManager::Update(sf::Event event)
 
 bool InputManager::KeyPressed(sf::Keyboard::Key key)
 {
-	if (event.key.code == key)
+	if (event.key.code == key && event.type == sf::Event::KeyPressed)
 		return true;
 	return false;
 } // End KeyPressed
@@ -38,7 +38,7 @@ bool InputManager::KeyPressed(std::vector<sf::Keyboard::Key> keys)
 
 bool InputManager::KeyReleased(sf::Keyboard::Key key)
 {
-	if (event.key.code == key && event.KeyReleased)
+	if (event.key.code == key && event.type == sf::Event::KeyReleased)
 		return true;
 	return false;
 } // end KeyReleased

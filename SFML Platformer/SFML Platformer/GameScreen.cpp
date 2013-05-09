@@ -23,7 +23,7 @@ void GameScreen::UnloadContent()
 } // end UnloadContent
 
 
-void GameScreen::Update(sf::Event event)
+void GameScreen::Update(sf::RenderWindow &Window, sf::Event event)
 {
 
 } // end Update
