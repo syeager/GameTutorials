@@ -19,11 +19,11 @@ void GameScreen::LoadContent()
 
 void GameScreen::UnloadContent()
 {
-
+	keys.clear();
 } // end UnloadContent
 
 
-void GameScreen::Update()
+void GameScreen::Update(sf::Event event)
 {
 
 } // end Update

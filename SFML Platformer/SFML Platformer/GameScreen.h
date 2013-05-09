@@ -1,4 +1,6 @@
 #pragma once
+#include "stdafx.h"
+
 class GameScreen
 {
 public:
@@ -7,7 +9,11 @@ public:
 
 	virtual void LoadContent();
 	virtual void UnloadContent();
-	virtual void Update();
+	virtual void Update(sf::Event event);
 	virtual void Draw(sf::RenderWindow &Window);
+
+protected:
+	InputManager input;
+	std::vector<sf::Keyboard::Key> keys;
 };
 

@@ -16,18 +16,24 @@ void SplashScreen::LoadContent()
 	font.loadFromFile("resources/fonts/AdobeHeitiStd-Regular.otf");
 	text.setString("Splash Screen");
 	text.setFont(font);
+	keys.push_back(sf::Keyboard::Return);
 } // end LoadContent
 
 
 void SplashScreen::UnloadContent()
 {
-
+	GameScreen::UnloadContent();
 } // end UnloadContent
 
 
-void SplashScreen::Update()
+void SplashScreen::Update(sf::Event event)
 {
+	input.Update(event);
 
+	if (input.KeyPressed(keys))
+	{
+		ScreenManager::Instance().AddScreen(new TitleScreen);
+	}
 } // end Update
 
 

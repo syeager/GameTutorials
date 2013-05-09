@@ -32,9 +32,9 @@ void ScreenManager::LoadContent()
 } // end LoadContent
 
 
-void ScreenManager::Update()
+void ScreenManager::Update(sf::Event event)
 {
-	currentScreen->Update();
+	currentScreen->Update(event);
 } // end Update
 
 

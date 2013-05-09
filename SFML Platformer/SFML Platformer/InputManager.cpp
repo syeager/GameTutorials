@@ -56,7 +56,7 @@ bool InputManager::KeyReleased(std::vector<sf::Keyboard::Key> keys)
 
 bool InputManager::KeyDown(sf::Keyboard::Key key)
 {
-	if (sf::Keyboard.isKeyPressed(key))
+	if (sf::Keyboard::isKeyPressed(key))
 		return true;
 	return false;
 } // end KeyDown

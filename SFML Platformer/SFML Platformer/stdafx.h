@@ -18,8 +18,8 @@
 #include <SFML/System.hpp>
 
 // TODO: reference additional headers your program requires here
-#include "GameScreen.h"
 #include "InputManager.h"
+#include "GameScreen.h"
 #include "ScreenManager.h"
 #include "SplashScreen.h"
 #include "TitleScreen.h"

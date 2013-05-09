@@ -8,7 +8,7 @@ public:
 
 	void LoadContent();
 	void UnloadContent();
-	void Update();
+	void Update(sf::Event event);
 	void Draw(sf::RenderWindow &Window);
 
 private:

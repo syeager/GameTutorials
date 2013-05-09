@@ -22,20 +22,15 @@ int main()
 			case sf::Event::Closed:
 				Window.close();
 				break;
-
-			case sf::Event::KeyPressed:
-				if (Event.key.code == sf::Keyboard::S)
-					ScreenManager::Instance().AddScreen(new SplashScreen);
-				if (Event.key.code == sf::Keyboard::T)
-					ScreenManager::Instance().AddScreen(new TitleScreen);
-				break;
 			}
+
+			ScreenManager::Instance().Update(Event);
 		}
 
 		Window.clear();
 
 		// update
-		ScreenManager::Instance().Update();
+		
 		ScreenManager::Instance().Draw(Window);
 
 		// draw
