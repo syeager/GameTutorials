@@ -39,8 +39,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>c:\SFML\SFML-2.0\include\;$(IncludePath)</IncludePath>
-    <LibraryPath>c:\SFML\SFML-2.0\lib\;$(LibraryPath)</LibraryPath>
+    <IncludePath>d:\SFML\SFML-2.0\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>d:\SFML\SFML-2.0\lib\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -82,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameScreen.h" />
+    <ClInclude Include="InputManager.h" />
     <ClInclude Include="ScreenManager.h" />
     <ClInclude Include="SplashScreen.h" />
     <ClInclude Include="stdafx.h" />
@@ -90,6 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameScreen.cpp" />
+    <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ScreenManager.cpp" />
     <ClCompile Include="SplashScreen.cpp" />

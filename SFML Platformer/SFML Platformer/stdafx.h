@@ -11,11 +11,15 @@
 #include <tchar.h>
 #include <iostream>
 #include <string>
+#include <vector>
 
 #include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
+#include <SFML/System.hpp>
 
 // TODO: reference additional headers your program requires here
 #include "GameScreen.h"
+#include "InputManager.h"
 #include "ScreenManager.h"
 #include "SplashScreen.h"
 #include "TitleScreen.h"
