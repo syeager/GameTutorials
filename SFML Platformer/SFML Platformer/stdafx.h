@@ -19,6 +19,8 @@
 
 // TODO: reference additional headers your program requires here
 #include "InputManager.h"
+#include "Animation.h"
+#include "FadeAnimation.h"
 #include "GameScreen.h"
 #include "ScreenManager.h"
 #include "SplashScreen.h"

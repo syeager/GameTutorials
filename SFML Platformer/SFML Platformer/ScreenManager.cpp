@@ -34,6 +34,7 @@ void ScreenManager::LoadContent()
 
 void ScreenManager::Update(sf::RenderWindow &Window, sf::Event event)
 {
+	deltaTime = frameClock.restart().asMilliseconds();
 	currentScreen->Update(Window, event);
 } // end Update
 
