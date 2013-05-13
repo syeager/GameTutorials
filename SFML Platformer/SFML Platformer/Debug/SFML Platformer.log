@@ -1,24 +1,17 @@
-﻿Build started 5/10/2013 12:02:17 AM.
+﻿Build started 5/13/2013 7:32:49 PM.
      1>Project "D:\Documents\GitHub\GameTutorials\SFML Platformer\SFML Platformer\SFML Platformer.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Touching "Debug\SFML Platformer.unsuccessfulbuild".
+         Creating "Debug\SFML Platformer.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\SFML Platformer.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
-         stdafx.cpp
-         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\SFML Platformer.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Animation.cpp FadeAnimation.cpp GameScreen.cpp InputManager.cpp ScreenManager.cpp SplashScreen.cpp TitleScreen.cpp main.cpp
-         FadeAnimation.cpp
-         Animation.cpp
-         Generating Code...
-         Skipping... (no relevant changes detected)
-         main.cpp
-         TitleScreen.cpp
+         All outputs are up-to-date.
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\SFML Platformer.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt SplashScreen.cpp
          SplashScreen.cpp
-         ScreenManager.cpp
-         InputManager.cpp
-         GameScreen.cpp
+     1>d:\documents\github\gametutorials\sfml platformer\sfml platformer\splashscreen.cpp(23): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\documents\github\gametutorials\sfml platformer\sfml platformer\splashscreen.cpp(26): warning C4018: '<' : signed/unsigned mismatch
        Link:
          D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\GitHub\GameTutorials\SFML Platformer\Debug\SFML Platformer.exe" /INCREMENTAL:NO /NOLOGO "sfml-window-d.lib" "sfml-graphics-d.lib" "sfml-audio-d.lib" "sfml-system-d.lib" "sfml-network-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\SFML Platformer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Documents\GitHub\GameTutorials\SFML Platformer\Debug\SFML Platformer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\GitHub\GameTutorials\SFML Platformer\Debug\SFML Platformer.lib" /MACHINE:X86 Debug\Animation.obj
          Debug\FadeAnimation.obj
+         Debug\FileManager.obj
          Debug\GameScreen.obj
          Debug\InputManager.obj
          Debug\main.obj
@@ -37,4 +30,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.84
+Time Elapsed 00:00:00.31

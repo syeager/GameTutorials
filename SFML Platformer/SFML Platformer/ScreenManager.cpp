@@ -23,19 +23,34 @@ ScreenManager::ScreenManager()
 void ScreenManager::Initialize()
 {
 	currentScreen = new SplashScreen();
+	transition = false;
+
+	file.LoadContent("data.txt", attributes, contents);
 } // end Initialize
 
 
 void ScreenManager::LoadContent()
 {
 	currentScreen->LoadContent();
+	fade.LoadContent("", sf::Texture(), sf::Vector2f());
+	fade.SetAlpha(0.0f);
 } // end LoadContent
+
+
+void ScreenManager::UnloadContent()
+{
+
+} // end UnloadContent
 
 
 void ScreenManager::Update(sf::RenderWindow &Window, sf::Event event)
 {
 	deltaTime = frameClock.restart().asMilliseconds();
-	currentScreen->Update(Window, event);
+	if (!transition)
+	{
+		currentScreen->Update(Window, event);
+	}
+	Transition(Window);
 } // end Update
 
 
@@ -47,8 +62,36 @@ void ScreenManager::Draw(sf::RenderWindow &Window)
 
 void ScreenManager::AddScreen(GameScreen *screen)
 {
-	currentScreen->UnloadContent();
-	delete currentScreen;
-	currentScreen = screen;
-	currentScreen->LoadContent();
+	transition = true;
+	newScreen = screen;
+	fade.SetActive(true);
+	fade.SetAlpha(0.0f);
 } // end AddScreen
+
+
+void ScreenManager::Transition(sf::RenderWindow &Window)
+{
+	if (transition)
+	{
+		fade.Update(Window);
+		if (fade.GetAlpha() >= 1.0f)
+		{
+			currentScreen->UnloadContent();
+			delete currentScreen;
+			currentScreen = newScreen;
+			currentScreen->LoadContent();
+			newScreen = NULL;
+		}
+		else if (fade.GetAlpha() <= 0.0f)
+		{
+			transition = false;
+			fade.SetActive(false);
+		}
+	}
+} // end Transition
+
+
+float ScreenManager::GetAlpha()
+{
+	return fade.GetAlpha();
+} // end GetAlpha

@@ -15,5 +15,9 @@ public:
 protected:
 	InputManager input;
 	std::vector<sf::Keyboard::Key> keys;
+
+	FileManager file;
+	std::vector<std::vector<std::string>> attributes;
+	std::vector<std::vector<std::string>> contents;
 };
 

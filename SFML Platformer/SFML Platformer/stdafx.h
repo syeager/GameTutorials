@@ -12,6 +12,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <fstream>
+#include <algorithm>
+#include <sstream>
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
@@ -19,6 +22,7 @@
 
 // TODO: reference additional headers your program requires here
 #include "InputManager.h"
+#include "FileManager.h"
 #include "Animation.h"
 #include "FadeAnimation.h"
 #include "GameScreen.h"

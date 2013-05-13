@@ -78,11 +78,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="data.txt" />
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
     <ClInclude Include="FadeAnimation.h" />
+    <ClInclude Include="FileManager.h" />
     <ClInclude Include="GameScreen.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="ScreenManager.h" />
@@ -94,6 +96,7 @@
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="FadeAnimation.cpp" />
+    <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="GameScreen.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="main.cpp" />

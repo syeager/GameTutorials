@@ -16,7 +16,7 @@ void FadeAnimation::LoadContent(std::string text, sf::Texture image, sf::Vector2
 {
 	Animation::LoadContent(text, image, position);
 	increase = false;
-	fadeSpeed = 100.0f;
+	fadeSpeed = 0.001f;
 } // end LoadContent
 
 
@@ -54,6 +54,8 @@ void FadeAnimation::Update(sf::RenderWindow &Window)
 	{
 		alpha = 1.0f;
 	}
+
+	Animation::Update(Window);
 } // End Update
 
 
@@ -61,3 +63,18 @@ void FadeAnimation::Draw(sf::RenderWindow &Window)
 {
 	Animation::Draw(Window);
 } // end Draw
+
+
+void FadeAnimation::SetAlpha(float value)
+{
+	alpha = value;
+	
+	if (alpha == 0.0f)
+	{
+		increase = true;
+	}
+	else
+	{
+		increase = false;
+	}
+}

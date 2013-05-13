@@ -13,6 +13,8 @@ public:
 	virtual void Update(sf::RenderWindow &Window);
 	void Draw(sf::RenderWindow &Window);
 
+	void SetAlpha(float value);
+
 private:
 	bool increase;
 	float fadeSpeed;

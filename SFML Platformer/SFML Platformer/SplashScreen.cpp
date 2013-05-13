@@ -17,12 +17,38 @@ void SplashScreen::LoadContent()
 	text.setString("Splash Screen");
 	text.setFont(font);
 	keys.push_back(sf::Keyboard::Return);
+	imageNumber = 0;
+	
+	file.LoadContent("resources/images/data.txt", attributes, contents);
+
+	for (int i = 0; i < attributes.size(); i++)
+	{
+		
+		for (int j = 0; j < attributes[i].size(); j++)
+		{
+			std::string att = attributes[i][j];
+			if (att == "Image")
+			{
+				if (image.loadFromFile(contents[i][j])) std::cout<<"no image\n";
+				fade.push_back(new FadeAnimation);
+				fade[fade.size()-1]->LoadContent("", image, sf::Vector2f(0.0f, 0.0f));
+				fade[fade.size()-1]->SetActive(true);
+			}
+		}
+	}
 } // end LoadContent
 
 
 void SplashScreen::UnloadContent()
 {
 	GameScreen::UnloadContent();
+
+	for (int i = 0; 9 < fade.size(); i++)
+	{
+		fade[i]->UnloadContent();
+		delete fade[i];
+	}
+	fade.clear();
 } // end UnloadContent
 
 
@@ -30,7 +56,14 @@ void SplashScreen::Update(sf::RenderWindow &Window, sf::Event event)
 {
 	input.Update(event);
 
-	if (input.KeyPressed(keys))
+	if (fade[imageNumber]->GetAlpha() <= 0.0f)
+	{
+		imageNumber++;
+	}
+
+	fade[imageNumber]->Update(Window);
+
+	if (input.KeyPressed(keys) || imageNumber >= fade.size()-1)
 	{
 		ScreenManager::Instance().AddScreen(new TitleScreen);
 	}
@@ -39,5 +72,6 @@ void SplashScreen::Update(sf::RenderWindow &Window, sf::Event event)
 
 void SplashScreen::Draw(sf::RenderWindow &Window)
 {
-	Window.draw(text);
+	//Window.draw(text);
+	fade[imageNumber]->Draw(Window);
 } // end Draw

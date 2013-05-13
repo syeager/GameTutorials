@@ -1,5 +1,6 @@
 #pragma once
 #include "stdafx.h"
+
 class SplashScreen : public GameScreen
 {
 public:
@@ -14,5 +15,8 @@ public:
 private:
 	sf::Text text;
 	sf::Font font;
+	sf::Texture image;
+	std::vector<FadeAnimation*> fade;
+	int imageNumber;
 };
 

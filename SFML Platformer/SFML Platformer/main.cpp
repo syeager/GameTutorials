@@ -1,4 +1,5 @@
-// Video: 11
+// Video: 17
+// bug on 16
 #include "stdafx.h"
 
 
@@ -10,6 +11,10 @@ int main()
 
 	ScreenManager::Instance().Initialize();
 	ScreenManager::Instance().LoadContent();
+
+	sf::RectangleShape Fade(sf::Vector2f(ScreenWidth, ScreenHeight));
+	Fade.setFillColor(sf::Color::White);
+
 
 	// main loop
 	while (Window.isOpen())
@@ -25,19 +30,17 @@ int main()
 				break;
 			}
 
+			// update
 			ScreenManager::Instance().Update(Window, Event);
 		}
 
-		Window.clear();
-
-		// update
-		
-		ScreenManager::Instance().Draw(Window);
-
 		// draw
+		Window.clear();		
+		ScreenManager::Instance().Draw(Window);
+		Fade.setFillColor(sf::Color(0, 0, 0, 255*ScreenManager::Instance().GetAlpha()));
+		Window.draw(Fade);
 		Window.display();
 	}
-
 
 	return 0;
 } // end main

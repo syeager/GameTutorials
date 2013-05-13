@@ -11,7 +11,10 @@ public:
 	virtual void UnloadContent();
 	virtual void Update(sf::RenderWindow &Window);
 	virtual void Draw(sf::RenderWindow &Window);
-	//virtual void SetAlpha();
+	virtual void SetAlpha(float value);
+	float GetAlpha();
+
+	void SetActive(bool value);
 
 protected:
 	float alpha;

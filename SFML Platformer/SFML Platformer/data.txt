@@ -1,0 +1,3 @@
+Load=[Image]
+[resources/images/publisher.png]
+[resources/images/developer.png]
