@@ -21,9 +21,10 @@
 #include <SFML/System.hpp>
 
 // TODO: reference additional headers your program requires here
+#include "Animation.h"
 #include "InputManager.h"
 #include "FileManager.h"
-#include "Animation.h"
+#include "MenuManager.h"
 #include "FadeAnimation.h"
 #include "GameScreen.h"
 #include "ScreenManager.h"

@@ -1,0 +1,46 @@
+﻿Build started 6/1/2013 6:11:22 PM.
+     1>Project "D:\Documents\GitHub\GameTutorials\Platformer Proto 01\Platformer Proto 01\Platformer Proto 01.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Platformer Proto 01.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Platformer Proto 01.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Character.cpp Fred.cpp Game.cpp GameObject.cpp GameObjectManager.cpp ResourcesManager.cpp Rigidbody.cpp Sprite.cpp Tile.cpp VisibleRB.cpp main.cpp
+         Game.cpp
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         main.cpp
+         VisibleRB.cpp
+         Tile.cpp
+         Sprite.cpp
+         Rigidbody.cpp
+         ResourcesManager.cpp
+         GameObjectManager.cpp
+         GameObject.cpp
+         Fred.cpp
+         Character.cpp
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\GitHub\GameTutorials\Platformer Proto 01\Debug\Platformer Proto 01.exe" /INCREMENTAL:NO /NOLOGO "sfml-window-d.lib" "sfml-graphics-d.lib" "sfml-audio-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Platformer Proto 01.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Documents\GitHub\GameTutorials\Platformer Proto 01\Debug\Platformer Proto 01.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\GitHub\GameTutorials\Platformer Proto 01\Debug\Platformer Proto 01.lib" /MACHINE:X86 Debug\Character.obj
+         Debug\Fred.obj
+         Debug\Game.obj
+         Debug\GameObject.obj
+         Debug\GameObjectManager.obj
+         Debug\LevelManager.obj
+         Debug\main.obj
+         Debug\ResourcesManager.obj
+         Debug\Rigidbody.obj
+         Debug\Sprite.obj
+         Debug\stdafx.obj
+         Debug\Tile.obj
+         Debug\VisibleRB.obj
+     1>Character.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+         Platformer Proto 01.vcxproj -> D:\Documents\GitHub\GameTutorials\Platformer Proto 01\Debug\Platformer Proto 01.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Documents\GitHub\GameTutorials\Platformer Proto 01\Debug\Platformer Proto 01.exe;#1" /manifest "Debug\Platformer Proto 01.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Debug\Platformer Proto 01.unsuccessfulbuild".
+         Touching "Debug\Platformer Proto 01.lastbuildstate".
+     1>Done Building Project "D:\Documents\GitHub\GameTutorials\Platformer Proto 01\Platformer Proto 01\Platformer Proto 01.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.57

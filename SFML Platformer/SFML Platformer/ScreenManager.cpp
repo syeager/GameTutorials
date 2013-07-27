@@ -64,7 +64,7 @@ void ScreenManager::AddScreen(GameScreen *screen)
 {
 	transition = true;
 	newScreen = screen;
-	fade.SetActive(true);
+	fade.SetValue(fade.GetActive(), true);
 	fade.SetAlpha(0.0f);
 } // end AddScreen
 
@@ -85,7 +85,7 @@ void ScreenManager::Transition(sf::RenderWindow &Window)
 		else if (fade.GetAlpha() <= 0.0f)
 		{
 			transition = false;
-			fade.SetActive(false);
+			fade.SetValue(fade.GetActive(), false);
 		}
 	}
 } // end Transition

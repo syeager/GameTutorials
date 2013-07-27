@@ -1,0 +1,30 @@
+﻿Build started 5/16/2013 2:23:59 PM.
+     1>Project "D:\Documents\GitHub\GameTutorials\Jump and Punch Man\Jump and Punch Man\Jump and Punch Man.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\Jump and Punch Man.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\Jump and Punch Man.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp
+         Game.cpp
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\GitHub\GameTutorials\Jump and Punch Man\Release\Jump and Punch Man.exe" /INCREMENTAL:NO /NOLOGO "sfml-window.lib" "sfml-system.lib" "sfml-main.lib" "sfml-graphics.lib" "sfml-audio.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Jump and Punch Man.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Documents\GitHub\GameTutorials\Jump and Punch Man\Release\Jump and Punch Man.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\GitHub\GameTutorials\Jump and Punch Man\Release\Jump and Punch Man.lib" /MACHINE:X86 Release\Character.obj
+         Release\Game.obj
+         Release\GameObjectManager.obj
+         Release\main.obj
+         Release\Rex.obj
+         Release\stdafx.obj
+         Release\VisibleGameObject.obj
+         Generating code
+     1>d:\documents\github\gametutorials\jump and punch man\jump and punch man\visiblegameobject.cpp(61): warning C4715: 'VisibleGameObject::GetPosition' : not all control paths return a value
+         Finished generating code
+         Jump and Punch Man.vcxproj -> D:\Documents\GitHub\GameTutorials\Jump and Punch Man\Release\Jump and Punch Man.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Documents\GitHub\GameTutorials\Jump and Punch Man\Release\Jump and Punch Man.exe;#1" /manifest "Release\Jump and Punch Man.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Release\Jump and Punch Man.unsuccessfulbuild".
+         Touching "Release\Jump and Punch Man.lastbuildstate".
+     1>Done Building Project "D:\Documents\GitHub\GameTutorials\Jump and Punch Man\Jump and Punch Man\Jump and Punch Man.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.46

@@ -1,0 +1,57 @@
+﻿Build started 5/31/2013 9:33:43 PM.
+     1>Project "D:\Documents\GitHub\GameTutorials\Jump and Punch Man\Jump and Punch Man\Jump and Punch Man.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Jump and Punch Man.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I./ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\Jump and Punch Man.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I./ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Jump and Punch Man.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\..\..\Box2D\Box2D_v2.2.1\HelloWorld\HelloWorld.cpp Character.cpp Game.cpp GameFunctions.cpp GameObject.cpp GameObjectManager.cpp Ground.cpp LevelManager.cpp Rex.cpp Rigidbody.cpp VisibleGameObject.cpp VisibleRB.cpp main.cpp mainBox.cpp
+         mainBox.cpp
+         main.cpp
+         VisibleRB.cpp
+         VisibleGameObject.cpp
+         Rigidbody.cpp
+     1>d:\documents\github\gametutorials\jump and punch man\jump and punch man\rigidbody.cpp(67): warning C4244: 'initializing' : conversion from 'const float' to 'int', possible loss of data
+     1>d:\documents\github\gametutorials\jump and punch man\jump and punch man\rigidbody.cpp(68): warning C4244: 'initializing' : conversion from 'const float' to 'int', possible loss of data
+     1>d:\documents\github\gametutorials\jump and punch man\jump and punch man\rigidbody.cpp(69): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>d:\documents\github\gametutorials\jump and punch man\jump and punch man\rigidbody.cpp(70): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>d:\documents\github\gametutorials\jump and punch man\jump and punch man\rigidbody.cpp(104): warning C4018: '<' : signed/unsigned mismatch
+         Rex.cpp
+         LevelManager.cpp
+         Ground.cpp
+         GameObjectManager.cpp
+         GameObject.cpp
+         GameFunctions.cpp
+         Game.cpp
+         Character.cpp
+         HelloWorld.cpp
+         Generating Code...
+     1>d:\documents\github\gametutorials\jump and punch man\jump and punch man\visiblegameobject.cpp(61): warning C4715: 'VisibleGameObject::GetPosition' : not all control paths return a value
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\GitHub\GameTutorials\Jump and Punch Man\Debug\Jump and Punch Man.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:./lib Box2D.lib "sfml-window-d.lib" "sfml-graphics-d.lib" "sfml-audio-d.lib" "sfml-system-d.lib" "sfml-network-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Jump and Punch Man.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Documents\GitHub\GameTutorials\Jump and Punch Man\Debug\Jump and Punch Man.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\GitHub\GameTutorials\Jump and Punch Man\Debug\Jump and Punch Man.lib" /MACHINE:X86 Debug\HelloWorld.obj
+         Debug\Character.obj
+         Debug\Game.obj
+         Debug\GameFunctions.obj
+         Debug\GameObject.obj
+         Debug\GameObjectManager.obj
+         Debug\Ground.obj
+         Debug\LevelManager.obj
+         Debug\main.obj
+         Debug\mainBox.obj
+         Debug\Rex.obj
+         Debug\Rigidbody.obj
+         Debug\stdafx.obj
+         Debug\VisibleGameObject.obj
+         Debug\VisibleRB.obj
+     1>HelloWorld.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+         Jump and Punch Man.vcxproj -> D:\Documents\GitHub\GameTutorials\Jump and Punch Man\Debug\Jump and Punch Man.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Documents\GitHub\GameTutorials\Jump and Punch Man\Debug\Jump and Punch Man.exe;#1" /manifest "Debug\Jump and Punch Man.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Debug\Jump and Punch Man.unsuccessfulbuild".
+         Touching "Debug\Jump and Punch Man.lastbuildstate".
+     1>Done Building Project "D:\Documents\GitHub\GameTutorials\Jump and Punch Man\Jump and Punch Man\Jump and Punch Man.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.87

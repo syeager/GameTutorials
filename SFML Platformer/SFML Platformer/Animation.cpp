@@ -11,7 +11,7 @@ Animation::~Animation(void)
 }
 
 
-void Animation::LoadContent(std::string text, sf::Texture image, sf::Vector2f position)
+void Animation::LoadContent(std::string text, sf::Texture &image, sf::Vector2f position)
 {
 	this->preText = text;
 	this->image = image;
@@ -38,7 +38,7 @@ void Animation::UnloadContent()
 
 void Animation::Update(sf::RenderWindow &Window)
 {
-	sprite.setColor(sf::Color(255, 255, 255, 255 * alpha));
+	
 } // end Update
 
 
@@ -47,20 +47,22 @@ void Animation::Draw(sf::RenderWindow &Window)
 	std::string str = text.getString();
 	if (str != "")
 	{
+		text.setColor(sf::Color(255, 255, 255, 255*alpha));
+		text.setPosition(position);
+		text.setScale(scale, scale);
+
 		Window.draw(text);
 	}
 
 	if (sprite.getTexture() != NULL)
 	{
+		sprite.setColor(sf::Color(255, 255, 255, 255 * alpha));
+		sprite.setPosition(position);
+		sprite.setScale(scale, scale);
+
 		Window.draw(sprite);
 	}
 } // end Draw
-
-
-float Animation::GetAlpha()
-{
-	return alpha;
-} // end GetAlpha
 
 
 void Animation::SetAlpha(float value)
@@ -69,7 +71,19 @@ void Animation::SetAlpha(float value)
 } // end SetAlpha
 
 
-void Animation::SetActive(bool value)
+float &Animation::GetAlpha()
 {
-	active = value;
-} // end SetActive
+	return alpha;
+}
+
+
+bool &Animation::GetActive()
+{
+	return active;
+}
+
+
+float &Animation::GetScale()
+{
+	return scale;
+}

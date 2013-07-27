@@ -12,7 +12,7 @@ FadeAnimation::~FadeAnimation(void)
 }
 
 
-void FadeAnimation::LoadContent(std::string text, sf::Texture image, sf::Vector2f position)
+void FadeAnimation::LoadContent(std::string text, sf::Texture &image, sf::Vector2f position)
 {
 	Animation::LoadContent(text, image, position);
 	increase = false;

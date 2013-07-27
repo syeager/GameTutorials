@@ -1,5 +1,4 @@
-// Video: 17
-// bug on 16
+// Video: 20
 #include "stdafx.h"
 
 
